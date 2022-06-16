@@ -20,11 +20,12 @@ elForm.addEventListener("submit", function(evt){
     if(isNaN(val)){
         warning.textContent = "Son kiriting"
     }else{
-        resultp.textContent = person(val) + hour
-        resultb.textContent = bike(val) + hour
-        resultc.textContent = car(val) + hour
-        resulta.textContent = plane(val) + hour
+        warning.textContent = ""
     }
+    resultp.textContent = person(val) + hour
+    resultb.textContent = bike(val) + hour
+    resultc.textContent = car(val) + hour
+    resulta.textContent = plane(val) + hour
 })
 function person (a){
     var personHour = Math.floor(a / PERSON_SPEED)
